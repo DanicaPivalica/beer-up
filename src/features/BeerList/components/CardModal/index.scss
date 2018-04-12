@@ -1,0 +1,65 @@
+@import '../../../../../assets/scss/variables.scss';
+
+.card__modal{
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+
+    .icon-Close-icon{
+        position: absolute;
+        right: 6%;
+        cursor: pointer;
+    }
+    &__img{
+        width: 12%;
+        padding-left: 10%;
+    }
+    &__title{
+        color: $darkFontColor;
+        text-transform: capitalize;
+        font-weight: bold;
+        line-height: 17px;
+        font-size: 2rem;
+    }
+    &__property__name{
+        color: $lightFontColor;
+        float: left;
+        text-transform: uppercase;
+        flex-basis: 100%;
+    }
+    &__property{
+        padding-left: 5%;
+        flex-basis: 100%;
+        display: flex;
+        text-align: justify;
+        flex-wrap: wrap;
+
+        &__holder{
+            display: flex;
+            flex-flow: row;
+            width: 70%;
+            height: 100%;
+            flex-wrap: wrap;
+            flex-grow: 1;
+        }
+        &--first{
+            padding: 5%;
+            flex-basis: 100%;
+            display: flex;
+            text-align: justify;
+            flex-wrap: wrap;
+        }
+        div[class^='button']{
+            margin-top:5%
+        }
+    }
+    &__favourite{
+        position: absolute;
+        top: 6%;
+        left: 6%;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}

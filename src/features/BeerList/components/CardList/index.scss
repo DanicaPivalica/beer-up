@@ -1,0 +1,23 @@
+$mobile-upper: 680px;
+$mobile-lower: 0px;
+
+.card__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 50vh;
+
+    
+    .card{
+        margin: 2%;
+        &__header{
+            flex-basis: 100%;
+        padding-left: 2%;
+        font-size: 36px;
+        }
+    }
+}
+
+.infinite-scroll-component{
+    overflow-x: hidden !important;
+}

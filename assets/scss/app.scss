@@ -1,0 +1,26 @@
+@import 'react-redux-toastr/src/styles/index';
+@import 'loaders.css/src/animations/ball-pulse.scss';
+@import './variables.scss';
+@import './icons.scss';
+
+body{
+    background: $backgroundColor;
+    font-family: $fontFamily;
+    color: $fontColor;
+    margin: 0;
+}
+
+.flexbox__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+$primary-color: $primary;
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}

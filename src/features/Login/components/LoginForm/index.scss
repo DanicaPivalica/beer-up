@@ -1,0 +1,55 @@
+@import '../../../../../assets/scss/variables.scss';
+
+.login{
+    &__card{
+
+        .tooltip-label{
+            font-size: 12px;
+            left: 25% !important;
+            background-color: $error !important;
+            &:after{
+                border-top-color: $error !important;
+            }
+        }
+
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+
+        hr{
+            margin-top: 40px;
+            border-color: rgba(0, 0, 0, 0.08);
+        }
+
+        .inputGroup, .radioGroup, .inputGroup--error {
+            border-radius: $elementRadius;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    
+        .inputGroup, .radioGroup, .inputGroup--error {
+            margin-bottom: 10px;
+        }
+    }
+    &__form{
+        display: flex;
+        background: $light;
+        flex-wrap: wrap;
+        padding: 2rem;
+        padding-top: 1rem;
+        border-radius: $elementRadius;
+        box-shadow: $boxShadow;
+    }
+
+    &__title{
+        border-radius: $elementRadius;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &__title{
+        padding-top: 10px;
+        flex-basis: 100%;
+
+    }
+}

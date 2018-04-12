@@ -1,0 +1,40 @@
+@import '../../../assets/scss/variables.scss';
+.beerList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__header{
+        flex-basis: 100%;
+        background: $secondairy;
+        min-height: 300px;
+        min-height: 300px;
+        padding-left: 10%;
+        padding-right: 10%;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+    div[class^="button"]{
+        margin: 10px;
+    }
+    &__list{
+        flex-basis: 50%;
+    }
+    &__cart{
+        flex-basis: 30%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.beerList__list{
+    position: relative;
+    .ball-pulse {
+        top: 50%;
+        left: 50%;
+        transform: scale(2.5);
+        position: absolute;
+       div{
+           background: $primary;
+       }
+    }
+}

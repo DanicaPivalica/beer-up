@@ -1,0 +1,9 @@
+@import '../../../assets/scss/variables.scss';
+
+.FakeCard{
+    background-color: $light;
+    box-shadow: $boxShadow;
+    width: $cardWidth;
+    height: $cardHeight;
+    border-radius: $elementRadius;
+}

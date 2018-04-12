@@ -1,0 +1,27 @@
+@import '../../../assets/scss/variables.scss';
+
+div[class^="button"]{
+    padding: 10px 30px;
+    border: 2px solid $primary;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: $buttonRadius;
+    display: inline-block;
+    color: $primary;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.button{
+    
+    &--active{
+        background: $primary;
+        border-radius: $buttonRadius;
+        color: $fontColor !important;
+        font-weight: bold;
+        
+        &:hover{
+            border: 2px solid $light;
+        }
+    }
+}

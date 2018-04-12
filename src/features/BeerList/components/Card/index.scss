@@ -1,0 +1,64 @@
+@import '../../../../../assets/scss/variables.scss';
+
+
+
+.card{
+    background-color: $light;
+    box-shadow: $boxShadow;
+    width: $cardWidth;
+    height: $cardHeight;
+    border-radius: $elementRadius;
+    display: flex;
+    border-radius: 4px;
+    cursor: pointer;
+    align-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+
+    &:hover{
+        box-shadow: $boxShadowPrimary;
+    }
+
+    &__img{
+        width: 18%;
+        padding: 15%;
+        padding-right: 5%;
+        min-height: 102px;
+    }
+    &__title{
+        color: $darkFontColor;
+        text-transform: capitalize;
+        font-weight: bold;
+        line-height: 17px;
+        width: 49%;
+        padding-right: 15%;
+    }
+    &__property__name{
+        color: $lightFontColor;
+        float: left;
+        text-transform: uppercase;
+    }
+    &__property{
+        float: right;
+        text-align: right;
+        width: 49%;
+        padding-right: 15%;
+        &--first{
+            padding-top: 5%;
+            float: right;
+            text-align: right;
+            width: 49%;
+            padding-right: 15%;
+        }
+    }
+    &__favourite{
+        position: absolute;
+        top: 6%;
+        left: 6%;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+    }
+}

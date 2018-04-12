@@ -1,0 +1,55 @@
+@import '../../../assets/scss/variables.scss';
+
+div[class^="header-"]{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    @media screen and (max-width: $mobile-upper ) and (min-width: $mobile-lower) {
+        max-width: 100%;
+    }
+}
+.header{
+    position: relative;
+    padding: 5%;
+    @media screen and (max-width: $mobile-upper ) and (min-width: $mobile-lower) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &--small{
+        color: $light;
+        font-size: 1rem;
+        font-weight: light;
+    }
+    &--big{
+        text-transform: uppercase;
+        color: $light;
+        font-weight: bold;
+        font-size: 4rem;
+        max-width: 50%;
+        display: inline-block;
+    }
+    &__beer{
+        position: absolute;
+        font-size: 16rem;
+        right: 10%;
+        top: 10%;
+        @media screen and (max-width: $mobile-upper ) and (min-width: $mobile-lower) {
+            position: relative;
+            font-size: auto;
+            right: auto;
+            top: auto;
+            img{
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: $tablet-upper ) and (min-width: $tablet-lower) {
+            right: 0;
+            top: 10%;
+            img{
+                width: 250px;
+            }
+        }
+    }
+}

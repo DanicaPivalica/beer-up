@@ -1,0 +1,84 @@
+@import '../../../../../assets/scss/variables.scss';
+
+.inputGroup__input--error{
+    border-color: $error !important;
+    &:focus{
+        outline: $error auto 2px;
+    }
+    &:focus + label{
+        color: $error !important;
+        font-weight: bold;
+        font-size: 13px;
+    }
+}
+
+.inputGroup{
+    flex-basis: 100%;
+    position: relative;
+
+    &--error{
+        margin-top: 50px !important;
+        position: relative;
+    }
+    
+    &__label{
+        position: absolute;
+        font-size: 11px;
+        left: 1rem;
+        top: 0.5rem;
+
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+         opacity: 1;
+    }
+
+    &__input, &__input--error{
+        border-radius: $elementRadius;
+        box-shadow: $boxShadow;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 0.5rem 1rem;
+        padding-top: 1.5rem;
+        font-size: 14px;
+        -webkit-transition: width 1s ease-in-out, padding 1s ease-in-out;
+        -moz-transition: width 1s ease-in-out, padding 1s ease-in-out;
+        -o-transition: width 1s ease-in-out, padding 1s ease-in-out;
+        transition: width 1s ease-in-out, padding 1s ease-in-out;
+        width: 55%;
+        @media screen and (max-width: $mobile-upper ) and (min-width: $mobile-lower) {
+            width: calc(100% - 20px - 1rem);
+        }
+        &--big, &--big--error{
+            border-radius: $elementRadius;
+            box-shadow: $boxShadow;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 0.5rem 1rem;
+            padding-top: 1.5rem;
+            font-size: 14px;
+            width: calc(100% - 20px - 1rem);
+            min-height: 5rem;
+            &:focus{
+                outline: $primary auto 2px;
+            }
+            &:focus + label{
+                color: $primary;
+                font-weight: bold;
+                font-size: 13px;
+            }
+        }
+        &:focus{
+            width: 80%;
+            outline: $primary auto 2px;
+            @media screen and (max-width: $mobile-upper ) and (min-width: $mobile-lower) {
+                width: calc(100% - 20px - 1rem);
+            }
+        }
+        &:focus + label{
+            color: $primary;
+            font-weight: bold;
+            font-size: 13px;
+        }
+    }
+}

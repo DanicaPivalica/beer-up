@@ -1,0 +1,22 @@
+@import '../../../assets/scss/variables.scss';
+
+.login{
+    &__header{
+        flex-basis: 100%;
+        background: $secondairy;
+        min-height: 300px;
+        min-height: 300px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-right: 10%;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+}
+
+.login__form__holder{
+    .login_title{
+        padding-top: 3rem;
+        text-align: center;
+    }
+}

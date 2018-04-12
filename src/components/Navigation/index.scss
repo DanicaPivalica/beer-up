@@ -1,0 +1,65 @@
+@import '../../../assets/scss/variables.scss';
+
+.menu{
+    display: flex;
+    background: $secondairy;
+    height: 70px;
+    align-items: center;
+    color: $light;
+    padding-left: 10%;
+    padding-right: 10%;
+    @media screen and (max-width: $mobile-upper ) and (min-width: $mobile-lower) {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    &__brand, &__link, &__link--active , &__button, &__button--active {
+        margin: 10px;
+        cursor: pointer;
+        @media screen and (max-width: $mobile-upper ) and (min-width: $mobile-lower) {
+            flex-basis: 100%;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &__brand{
+        flex-grow: 1;
+        font-size: 2.5rem;
+        a {
+            display: flex;
+            align-items: center;
+            .icon-symbol{
+                padding: 5px;
+            }
+            .icon-logo{
+                font-size: 6rem;
+            }
+        }
+        
+    }
+    &__link, &__button, &__button--active{
+        padding: 15px 10px;
+    }
+
+    &__button, &__button--active{
+        padding: 10px 30px;
+        border: 2px solid $primary;
+        color: $primary;
+        border-radius: $buttonRadius;
+        &:hover, &--active{
+          border: 2px solid $primary;
+          background: $primary;
+          color: $light;
+        }
+    }
+
+    &__link{
+        &--active{
+            border-bottom: 2px solid $primary;
+            color: $primary;
+        }
+    }
+}
