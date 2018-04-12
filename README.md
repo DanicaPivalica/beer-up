@@ -1,5 +1,5 @@
 # BeerUp 
-A fun app for everyone wishing to favourite beers.
+A fun app for everyone wishing to beer up :D
 
 ## Starting the project
 
